@@ -11,6 +11,9 @@ episode.json "voice" (all optional): {"id": "TX3LPaxmHKxFdv7VOQHJ", "model": "el
   "settings": {"stability": 0.4, "similarity_boost": 0.8, "style": 0.35, "use_speaker_boost": true}}
 episode.json "gaps" (seconds, all optional): {"word": 0.12, "comma": 0.2, "sentence": 0.3, "question": 0.45,
   "pairs": {"anything|One": 0.6}}  -> every pause longer than its limit is cut to the limit, from its middle.
+episode.json "outro" (optional): {"text": "Want part two? Subscribe, and hit the bell.", "gap": 1.2} -> a line after the
+  story, its own take (cached separately, so changing it never re-voices the episode), placed `gap` seconds after the
+  last word; its words join words.json, so shots and sounds can cue on them ("Subscribe+2").
 """
 import base64, hashlib, json, re, sys, time
 
@@ -102,7 +105,6 @@ for i, part in enumerate(parts):
         part[-fade:] *= np.linspace(1, 0, fade)
     parts[i] = part
 y = np.concatenate(parts)
-write_wav(pub_dir(slug) / 'voice.wav', y)
 
 
 def shift(t):
@@ -110,6 +112,62 @@ def shift(t):
 
 
 out = [{'w': w['w'], 's': round(shift(w['s']), 3), 'e': round(shift(w['e']), 3), 'p': w.get('p', '')} for w in words]
+
+
+def words_of(al):
+    """Words and their times from an alignment (characters with start and end times), with trailing punctuation."""
+    ws, cur = [], None
+    for ch, s, e in zip(al['characters'], al['character_start_times_seconds'], al['character_end_times_seconds']):
+        if re.match(r"[\w'’]", ch):
+            if cur is None:
+                cur = {'w': '', 's': s, 'e': e, 'p': ''}
+            cur['w'] += ch
+            cur['e'] = e
+        else:
+            if cur is not None:
+                ws.append(cur)
+                cur = None
+            if ws and ch.strip():
+                ws[-1]['p'] += ch
+    if cur:
+        ws.append(cur)
+    return ws
+
+
+# ---------------------------------------------------------------- the outro: a line after the story (a call to action)
+O = ep.get('outro')
+if O:
+    otext = O['text'].strip()
+    osig = hashlib.sha1(json.dumps([otext, V], sort_keys=True).encode()).hexdigest()[:12]
+    omp3 = pub_dir(slug) / 'outro_raw.mp3'
+    ometa_p = out_dir(slug) / 'outro_meta.json'
+    ometa = load_json(ometa_p, {}) or {}
+    if force or ometa.get('sig') != osig or not omp3.exists():
+        print(f'outro: {len(otext)} characters to ElevenLabs (voice {V["id"]})')
+        t0 = time.time()
+        res = json.loads(api(f'/v1/text-to-speech/{V["id"]}/with-timestamps?output_format=mp3_44100_128', {'text': otext, 'model_id': V['model'], 'voice_settings': V['settings']}))
+        omp3.write_bytes(base64.b64decode(res['audio_base64']))
+        ometa = {'sig': osig, 'chars': len(otext), 'alignment': res['alignment']}
+        save_json(ometa_p, ometa)
+        used, n = spent_since(t0, expect=1)
+        log_cost(slug, 'outro', used, f'{len(otext)} characters' + ('' if n else '; not in the history yet, check the usage page'))
+    else:
+        print('Outro unchanged: reusing it (no credits).')
+    al = ometa['alignment']
+    ow = words_of(al)
+    a = max(0.0, ow[0]['s'] - 0.04)
+    b = ow[-1]['e'] + 0.25
+    seg = decode(omp3)[int(a * SR):int(b * SR)]
+    start = out[-1]['e'] + O.get('gap', 0.8)  # the outro starts this long after the story's last word
+    at = int(start * SR)
+    full = np.zeros(max(len(y), at + len(seg)))
+    full[:len(y)] = y
+    full[at:at + len(seg)] += seg
+    y = full
+    out += [{'w': w['w'], 's': round(w['s'] - a + start, 3), 'e': round(w['e'] - a + start, 3), 'p': w['p']} for w in ow]
+    print(f'Outro "{otext}" at {start:.2f} s, {len(seg) / SR:.2f} s long')
+
+write_wav(pub_dir(slug) / 'voice.wav', y)
 save_json(ep_dir(slug) / 'words.json', out)
 print(f'Tightened {len(cuts)} pauses, removed {sum(e - s for s, e in cuts):.2f} s: {len(x) / SR:.2f} s -> {len(y) / SR:.2f} s')
 print(' '.join(f"{w['w']}@{w['s']}" for w in out))
