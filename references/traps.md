@@ -1,7 +1,35 @@
 # Traps
 
-Every one of these cost real time on the proof clip or the copy-paste run. Check the list before building a set, a
-shot or a character.
+Every one of these cost real time on the proof clip, the copy-paste run or the shrink Short. Check the list before
+building a set, a shot or a character.
+
+## The house look (Ink Stick)
+
+- **Don't offer 3D as the answer to "stiff".** The shrink Short was built in Cel 3D, Paper Fold, Plush and Painted
+  2D first; the person wanted flat 2D figures that move more, cut from the world's own ink. Liveliness comes from the
+  motion (springs, breathing, squash), not from rendering.
+- **A flat figure can't foreshorten.** A limb pointing at the camera read as a stub (an "arm" poking into an eye).
+  The stick rig keeps every segment at 80% of its length or more; if a pose still reads wrong flat, change the pose
+  so the limb swings across the picture, not toward the lens.
+- **Joints must sit inside the body.** Arms hung from the 3D body's shoulder width floated beside the thin stick
+  torso, and the tops of the legs showed as knobs. Shoulders and hips sit inside the outline (`shoulderX`, `hipX` in
+  `stick.tsx`).
+- **A low camera put the head behind its own body,** and the neck crossed the face. Draw order comes from the turn
+  only, and the neck is drawn with the head.
+- **Eyelines aren't automatic.** "Then he looks at your sister" shipped first with both characters staring at the
+  camera. Key `headNod`, `headTurn` and `look` toward whatever the line names, and stagger who looks first.
+- **Labels collide with the power's chip.** A readout above a caliper sat right on the SHRINK chip in the top-left
+  corner, and a tag covered a face. Keep readouts and tags clear of the chip (y 150 to 230 on a Short) and off
+  faces; lower the camera or move the caliper's top rather than shrink the text.
+- **A tag's punched hole covers its last letter** if the tag is sized only for the text: `SpecimenTag` leaves room
+  for it now. Check any new label with a hole or an icon.
+- **Props follow the drawn hand.** Use `handAt` with exactly the figure's pose, yaw, position, scale and pitch: it
+  includes the springs and the flat layout, so a prop placed from the raw pose drifts off the hand.
+- **The halftone moirés in small previews.** A still rendered at 0.3 scale showed a grid on the faces that isn't in
+  the full-size frame. Check textures at full size before fixing them.
+- **One episode, several versions, one `id`.** `master.py` renders whatever `episode.json`'s `id` names and writes
+  the same output file; copy each final out before the next render overwrites it.
+- **`remotion render --sequence` wants a folder,** not a file pattern, as its output.
 
 ## Drawing
 

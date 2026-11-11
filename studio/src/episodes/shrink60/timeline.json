@@ -1,0 +1,663 @@
+{
+ "slug": "shrink60",
+ "title": "WHAT IF YOU COULD SHRINK ANYTHING?",
+ "fps": 30,
+ "total": 1692,
+ "segments": [
+  {
+   "shot": "S1",
+   "a": 0,
+   "b": 34,
+   "t0": 0,
+   "t1": 34,
+   "line": "Too much to pack?"
+  },
+  {
+   "shot": "S2",
+   "a": 34,
+   "b": 59,
+   "t0": 0,
+   "t1": 25,
+   "line": "Shrink.",
+   "look": "shrink"
+  },
+  {
+   "shot": "S3",
+   "a": 59,
+   "b": 92,
+   "t0": 0,
+   "t1": 33,
+   "line": "It all fits."
+  },
+  {
+   "shot": "S4",
+   "a": 92,
+   "b": 140,
+   "t0": 0,
+   "t1": 48,
+   "line": "Couch stuck on the stairs?"
+  },
+  {
+   "shot": "S5",
+   "a": 140,
+   "b": 166,
+   "t0": 0,
+   "t1": 26,
+   "line": "Shrink.",
+   "look": "shrink"
+  },
+  {
+   "shot": "S6",
+   "a": 166,
+   "b": 198,
+   "t0": 0,
+   "t1": 32,
+   "line": "Still heavy."
+  },
+  {
+   "shot": "S7",
+   "a": 198,
+   "b": 245,
+   "t0": 0,
+   "t1": 47,
+   "line": "Annoying little sister?"
+  },
+  {
+   "shot": "S8",
+   "a": 245,
+   "b": 270,
+   "t0": 0,
+   "t1": 25,
+   "line": "Shrink.",
+   "look": "shrink"
+  },
+  {
+   "shot": "S9",
+   "a": 270,
+   "b": 296,
+   "t0": 0,
+   "t1": 26,
+   "line": "Uh oh."
+  },
+  {
+   "shot": "S10",
+   "a": 296,
+   "b": 343,
+   "t0": 0,
+   "t1": 47,
+   "line": "What if you could shrink anything?"
+  },
+  {
+   "shot": "S11",
+   "a": 343,
+   "b": 380,
+   "t0": 0,
+   "t1": 37,
+   "line": "Homework mountain?"
+  },
+  {
+   "shot": "S12",
+   "a": 380,
+   "b": 404,
+   "t0": 0,
+   "t1": 24,
+   "line": "Shrink.",
+   "look": "shrink"
+  },
+  {
+   "shot": "S13",
+   "a": 404,
+   "b": 442,
+   "t0": 0,
+   "t1": 38,
+   "line": "A whole pizza?"
+  },
+  {
+   "shot": "S14",
+   "a": 442,
+   "b": 467,
+   "t0": 0,
+   "t1": 25,
+   "line": "Shrink.",
+   "look": "shrink"
+  },
+  {
+   "shot": "S15",
+   "a": 467,
+   "b": 497,
+   "t0": 0,
+   "t1": 30,
+   "line": "One bite."
+  },
+  {
+   "shot": "S16",
+   "a": 497,
+   "b": 539,
+   "t0": 0,
+   "t1": 42,
+   "line": "Still every calorie."
+  },
+  {
+   "shot": "S17",
+   "a": 539,
+   "b": 635,
+   "t0": 0,
+   "t1": 96,
+   "line": "Because here's the catch: things get smaller, never lighter."
+  },
+  {
+   "shot": "S18",
+   "a": 635,
+   "b": 752,
+   "t0": 0,
+   "t1": 117,
+   "line": "Shrink something to a twentieth of its size, and it's eight thousand times denser."
+  },
+  {
+   "shot": "S19",
+   "a": 752,
+   "b": 842,
+   "t0": 0,
+   "t1": 90,
+   "line": "Shrink the Earth to sixteen millimetres, a marble,"
+  },
+  {
+   "shot": "S20",
+   "a": 842,
+   "b": 885,
+   "t0": 0,
+   "t1": 43,
+   "line": "and it's a black hole."
+  },
+  {
+   "shot": "S21",
+   "a": 885,
+   "b": 923,
+   "t0": 0,
+   "t1": 38,
+   "line": "That's real."
+  },
+  {
+   "shot": "S22",
+   "a": 923,
+   "b": 1016,
+   "t0": 0,
+   "t1": 93,
+   "line": "And that toy couch? Still forty kilos."
+  },
+  {
+   "shot": "S23",
+   "a": 1016,
+   "b": 1061,
+   "t0": 0,
+   "t1": 45,
+   "line": "The floor gives way."
+  },
+  {
+   "shot": "S24",
+   "a": 1061,
+   "b": 1106,
+   "t0": 0,
+   "t1": 45,
+   "line": "Next morning, a man in a suit"
+  },
+  {
+   "shot": "S25",
+   "a": 1106,
+   "b": 1143,
+   "t0": 0,
+   "t1": 37,
+   "line": "knocks at your door."
+  },
+  {
+   "shot": "S26",
+   "a": 1143,
+   "b": 1194,
+   "t0": 0,
+   "t1": 51,
+   "line": "He's seen the hole in the floor."
+  },
+  {
+   "shot": "S27",
+   "a": 1194,
+   "b": 1237,
+   "t0": 0,
+   "t1": 43,
+   "line": "He knows what you can do."
+  },
+  {
+   "shot": "S28",
+   "a": 1237,
+   "b": 1299,
+   "t0": 0,
+   "t1": 62,
+   "line": "And he wants you to shrink something for him."
+  },
+  {
+   "shot": "S29",
+   "a": 1299,
+   "b": 1342,
+   "t0": 0,
+   "t1": 43,
+   "line": "Something big."
+  },
+  {
+   "shot": "S30",
+   "a": 1342,
+   "b": 1435,
+   "t0": 0,
+   "t1": 93,
+   "line": "Then he looks at your sister, still mouse- sized."
+  },
+  {
+   "shot": "S31",
+   "a": 1435,
+   "b": 1511,
+   "t0": 0,
+   "t1": 76,
+   "line": "'Our lab can make her big again, ' he says."
+  },
+  {
+   "shot": "S32",
+   "a": 1511,
+   "b": 1549,
+   "t0": 0,
+   "t1": 38,
+   "line": "'If you help us. '"
+  },
+  {
+   "shot": "S33",
+   "a": 1549,
+   "b": 1593,
+   "t0": 0,
+   "t1": 44,
+   "line": "What would you do?"
+  },
+  {
+   "shot": "S34",
+   "a": 1593,
+   "b": 1692,
+   "t0": 0,
+   "t1": 99,
+   "line": "Part one."
+  }
+ ],
+ "shots": [
+  {
+   "id": "S1",
+   "size": "medium wide",
+   "key": 9,
+   "len": 34,
+   "first": 0,
+   "line": "Too much to pack?",
+   "note": "Juno leans on the overflowing suitcase; the lid springs back"
+  },
+  {
+   "id": "S2",
+   "size": "top-down insert",
+   "key": 15,
+   "len": 25,
+   "first": 34,
+   "line": "Shrink.",
+   "note": "the caliper clamps the heap; it squeezes into the case"
+  },
+  {
+   "id": "S3",
+   "size": "medium close",
+   "key": 18,
+   "len": 33,
+   "first": 59,
+   "line": "It all fits.",
+   "note": "the case zipped shut with room to spare; Juno smug; tag CLOTHES x0.28"
+  },
+  {
+   "id": "S4",
+   "size": "wide",
+   "key": 24,
+   "len": 48,
+   "first": 92,
+   "line": "Couch stuck on the stairs?",
+   "note": "a couch wedged on the stairs; Juno shoves, it won't move"
+  },
+  {
+   "id": "S5",
+   "size": "medium",
+   "key": 17,
+   "len": 26,
+   "first": 140,
+   "line": "Shrink.",
+   "note": "the caliper clamps the couch; it squeezes to a toy and drops"
+  },
+  {
+   "id": "S6",
+   "size": "medium close",
+   "key": 12,
+   "len": 32,
+   "first": 166,
+   "line": "Still heavy.",
+   "note": "Juno lifts the toy couch; his arm drops like it's full size"
+  },
+  {
+   "id": "S7",
+   "size": "wide two-shot",
+   "key": 20,
+   "len": 47,
+   "first": 198,
+   "line": "Annoying little sister?",
+   "note": "Bea dances on the island; Juno in the foreground has had enough"
+  },
+  {
+   "id": "S8",
+   "size": "medium, low",
+   "key": 11,
+   "len": 25,
+   "first": 245,
+   "line": "Shrink.",
+   "note": "the caliper clamps Bea; she squeezes to mouse size"
+  },
+  {
+   "id": "S9",
+   "size": "macro insert",
+   "key": 16,
+   "len": 26,
+   "first": 270,
+   "line": "Uh oh.",
+   "note": "tiny Bea looks up; the cat's head slides in"
+  },
+  {
+   "id": "S10",
+   "size": "title, wide",
+   "key": 40,
+   "len": 47,
+   "first": 296,
+   "line": "What if you could shrink anything?",
+   "note": "the premise over the city; Juno with the toy couch and the tiny case"
+  },
+  {
+   "id": "S11",
+   "size": "medium",
+   "key": 18,
+   "len": 37,
+   "first": 343,
+   "line": "Homework mountain?",
+   "note": "Juno looks up at a mountain of homework on the desk"
+  },
+  {
+   "id": "S12",
+   "size": "medium",
+   "key": 16,
+   "len": 24,
+   "first": 380,
+   "line": "Shrink.",
+   "note": "the caliper clamps the stacks; they squeeze to a pad"
+  },
+  {
+   "id": "S13",
+   "size": "top-down insert",
+   "key": 20,
+   "len": 38,
+   "first": 404,
+   "line": "A whole pizza?",
+   "note": "a whole pizza in its box"
+  },
+  {
+   "id": "S14",
+   "size": "top-down insert",
+   "key": 15,
+   "len": 25,
+   "first": 442,
+   "line": "Shrink.",
+   "note": "the caliper clamps the pizza; it squeezes to a coin"
+  },
+  {
+   "id": "S15",
+   "size": "close-up",
+   "key": 8,
+   "len": 30,
+   "first": 467,
+   "line": "One bite.",
+   "note": "Juno pops the coin-sized pizza in his mouth"
+  },
+  {
+   "id": "S16",
+   "size": "medium",
+   "key": 22,
+   "len": 42,
+   "first": 497,
+   "line": "Still every calorie.",
+   "note": "his belly swells: still every calorie"
+  },
+  {
+   "id": "S17",
+   "size": "schematic",
+   "key": 64,
+   "len": 96,
+   "first": 539,
+   "line": "Because here's the catch: things get smaller, never lighter.",
+   "note": "a balance: the couch and the toy couch weigh the same, 40 kg"
+  },
+  {
+   "id": "S18",
+   "size": "schematic",
+   "key": 80,
+   "len": 117,
+   "first": 635,
+   "line": "Shrink something to a twentieth of its size, and it's eight thousand times denser.",
+   "note": "a cube squeezes to 1/20; x8,000 denser counts up"
+  },
+  {
+   "id": "S19",
+   "size": "schematic",
+   "key": 72,
+   "len": 90,
+   "first": 752,
+   "line": "Shrink the Earth to sixteen millimetres, a marble,",
+   "note": "the Earth squeezes to 16 mm; the loupe shows it beside a marble"
+  },
+  {
+   "id": "S20",
+   "size": "schematic",
+   "key": 28,
+   "len": 43,
+   "first": 842,
+   "line": "and it's a black hole.",
+   "note": "the sheet floods with ink; the Earth caves in to a black hole"
+  },
+  {
+   "id": "S21",
+   "size": "extreme close-up",
+   "key": 18,
+   "len": 38,
+   "first": 885,
+   "line": "That's real.",
+   "note": "Juno, worried; his edge pink"
+  },
+  {
+   "id": "S22",
+   "size": "wide",
+   "key": 56,
+   "len": 93,
+   "first": 923,
+   "line": "And that toy couch? Still forty kilos.",
+   "note": "the toy couch on the floor; tag STILL 40 kg; the first cracks"
+  },
+  {
+   "id": "S23",
+   "size": "medium",
+   "key": 20,
+   "len": 45,
+   "first": 1016,
+   "line": "The floor gives way.",
+   "note": "the floor gives way: the couch drops through, Juno jumps back"
+  },
+  {
+   "id": "S24",
+   "size": "wide",
+   "key": 22,
+   "len": 45,
+   "first": 1061,
+   "line": "Next morning, a man in a suit",
+   "note": "next morning: Juno walks to the front door, from behind; clock 07:42"
+  },
+  {
+   "id": "S25",
+   "size": "insert",
+   "key": 10,
+   "len": 37,
+   "first": 1106,
+   "line": "knocks at your door.",
+   "note": "three knocks shake the door"
+  },
+  {
+   "id": "S26",
+   "size": "wide, low",
+   "key": 30,
+   "len": 51,
+   "first": 1143,
+   "line": "He's seen the hole in the floor.",
+   "note": "the door opens: the man in the suit, backlit, looks down at the hole"
+  },
+  {
+   "id": "S27",
+   "size": "close-up",
+   "key": 20,
+   "len": 43,
+   "first": 1194,
+   "line": "He knows what you can do.",
+   "note": "the suit, stern, turns to Juno"
+  },
+  {
+   "id": "S28",
+   "size": "two-shot",
+   "key": 36,
+   "len": 62,
+   "first": 1237,
+   "line": "And he wants you to shrink something for him.",
+   "note": "the suit holds out a folder; Juno reaches for it"
+  },
+  {
+   "id": "S29",
+   "size": "top-down insert",
+   "key": 30,
+   "len": 43,
+   "first": 1299,
+   "line": "Something big.",
+   "note": "the folder opens: a photo of the Moon, ringed in pink"
+  },
+  {
+   "id": "S30",
+   "size": "low angle",
+   "key": 40,
+   "len": 93,
+   "first": 1342,
+   "line": "Then he looks at your sister, still mouse- sized.",
+   "note": "tiny Bea between Juno's shoe and the suit's shoes"
+  },
+  {
+   "id": "S31",
+   "size": "close-up",
+   "key": 30,
+   "len": 76,
+   "first": 1435,
+   "line": "'Our lab can make her big again, ' he says.",
+   "note": "the suit leans in, smug: our lab can make her big again"
+  },
+  {
+   "id": "S32",
+   "size": "extreme close-up",
+   "key": 20,
+   "len": 38,
+   "first": 1511,
+   "line": "'If you help us. '",
+   "note": "Juno, torn; his edge pink"
+  },
+  {
+   "id": "S33",
+   "size": "wide",
+   "key": 30,
+   "len": 44,
+   "first": 1549,
+   "line": "What would you do?",
+   "note": "the three of them: the suit in the door, Juno, tiny Bea; the light goes pink"
+  },
+  {
+   "id": "S34",
+   "size": "card",
+   "key": 30,
+   "len": 99,
+   "first": 1593,
+   "line": "Part one.",
+   "note": "PART 1"
+  }
+ ],
+ "fx": [
+  {
+   "kind": "flash",
+   "color": "#FF4FA3",
+   "o": 0.22,
+   "f": 49
+  },
+  {
+   "kind": "flash",
+   "color": "#FF4FA3",
+   "o": 0.22,
+   "f": 155
+  },
+  {
+   "kind": "flash",
+   "color": "#FF4FA3",
+   "o": 0.22,
+   "f": 260
+  },
+  {
+   "kind": "flash",
+   "color": "#F3E7CD",
+   "o": 0.7,
+   "f": 296
+  },
+  {
+   "kind": "flash",
+   "color": "#FF4FA3",
+   "o": 0.2,
+   "f": 395
+  },
+  {
+   "kind": "flash",
+   "color": "#FF4FA3",
+   "o": 0.2,
+   "f": 457
+  },
+  {
+   "kind": "flash",
+   "color": "#FF4FA3",
+   "o": 0.35,
+   "f": 846
+  },
+  {
+   "kind": "shake",
+   "len": 14,
+   "amp": 14,
+   "f": 1047
+  },
+  {
+   "kind": "flash",
+   "color": "#F3E7CD",
+   "o": 0.3,
+   "f": 1047
+  },
+  {
+   "kind": "flash",
+   "color": "#FF4FA3",
+   "o": 0.45,
+   "f": 1593
+  }
+ ],
+ "audio": {
+  "voiceVol": 0.8,
+  "sfxVol": 0.4604,
+  "musicVol": 0.1197,
+  "voice": "shrink60/voice.mp3",
+  "sfx": "shrink60/sfx.mp3",
+  "music": "shrink60/music.mp3"
+ }
+}

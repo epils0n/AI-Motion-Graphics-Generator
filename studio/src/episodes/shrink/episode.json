@@ -1,0 +1,562 @@
+{
+ "id": "Shrink",
+ "slug": "shrink",
+ "topic": "What if you could shrink anything?",
+ "title": [
+  "WHAT IF YOU COULD",
+  "SHRINK ANYTHING?"
+ ],
+ "accent": "SHRINK",
+ "style": "NIGHT PRINT: sets printed in two inks (ink-teal to paper) through a gradient map, the cast in full colour as cut card (hard offset shadow, paper edge), fluorescent pink as the only spot colour for the power, a paper finish on top. See style.tsx.",
+ "power": {
+  "word": "Shrink.",
+  "rule": "anything you point at, down to any size; it gets smaller, never lighter",
+  "look": "pink caliper jaws clamp the thing on a ruler, the readout counts down (x1.00 to x0.05), the thing squeezes down with pink ghost trails"
+ },
+ "script": [
+  {
+   "beat": "1 cold open, demo 1 (small and selfish)",
+   "text": "Too much to pack? Shrink. It all fits."
+  },
+  {
+   "beat": "1 cold open, demo 2 (useful, and the first hint of the cost)",
+   "text": "Couch stuck on the stairs? Shrink. Still heavy."
+  },
+  {
+   "beat": "1 cold open, demo 3 (a little uncanny)",
+   "text": "Annoying little sister? Shrink. Uh oh."
+  },
+  {
+   "beat": "2 the premise (title card)",
+   "text": "What if you could shrink anything?"
+  },
+  {
+   "beat": "4 the turn: the cost, one real fact",
+   "text": "One catch: things get smaller, never lighter. Shrink the Earth to sixteen millimetres, a marble, and it's a black hole. That's real."
+  },
+  {
+   "beat": "5-7 folded into a question",
+   "text": "So why is the floor cracking?"
+  }
+ ],
+ "science": [
+  {
+   "claim": "Shrink the Earth to sixteen millimetres (a marble) and it's a black hole.",
+   "working": "A mass becomes a black hole once it fits inside its Schwarzschild radius, r = 2GM/c^2. For Earth: 2 x 6.674e-11 m^3 kg^-1 s^-2 x 5.972e24 kg / (2.998e8 m/s)^2 = 7.971e14 / 8.988e16 = 8.87e-3 m, so a radius of 8.87 mm, a diameter of 17.7 mm. A standard marble is 16 mm (5/8 inch) across, a radius of 8 mm, which is inside 8.87 mm: all of Earth's mass in a 16 mm ball is a black hole. The schematic shows 16 mm and the 17.7 mm limit.",
+   "source": "Schwarzschild radius r_s = 2GM/c^2; Earth's mass 5.972e24 kg (NASA Earth Fact Sheet); G and c from CODATA 2018; standard marble size 5/8 inch (16 mm)"
+  },
+  {
+   "claim": "Things get smaller, never lighter.",
+   "working": "The power's rule, and the honest version of shrinking: scaling a thing down doesn't remove any of its matter, so its mass (and its weight) stays the same while its volume falls with the cube of the scale. At x0.05 a thing's volume is 0.05^3 = 1/8000 of what it was, so it is 8,000 times denser.",
+   "source": "Conservation of mass; density = mass / volume, volume scales with length cubed"
+  }
+ ],
+ "cast": [
+  "juno",
+  "bea"
+ ],
+ "shots": [
+  {
+   "id": "S1",
+   "size": "medium wide",
+   "set": "bedroom",
+   "key": 9,
+   "note": "Juno leans on an overflowing suitcase on the bed; the lid springs back up"
+  },
+  {
+   "id": "S2",
+   "size": "top-down insert",
+   "set": "bedroom (the open case)",
+   "key": 15,
+   "note": "the caliper clamps the heap of clothes; it squeezes down into the case"
+  },
+  {
+   "id": "S3",
+   "size": "medium close",
+   "set": "bedroom",
+   "key": 18,
+   "note": "the case shut with room to spare; Juno zips it round, smug; a pink tag: CLOTHES x0.28"
+  },
+  {
+   "id": "S4",
+   "size": "wide",
+   "set": "stairwell",
+   "key": 24,
+   "note": "a couch wedged across the stairs; Juno shoves from below, it won't move"
+  },
+  {
+   "id": "S5",
+   "size": "medium",
+   "set": "stairwell",
+   "key": 17,
+   "note": "the caliper clamps the couch; it squeezes to a toy and drops onto the tread"
+  },
+  {
+   "id": "S6",
+   "size": "medium close",
+   "set": "stairwell",
+   "key": 12,
+   "note": "Juno lifts the toy couch one-handed; his arm drops like it's full size; tag: STILL 40 kg"
+  },
+  {
+   "id": "S7",
+   "size": "wide two-shot",
+   "set": "kitchen",
+   "key": 20,
+   "note": "Bea dances on the island; Juno in the foreground has had enough; the cat watches"
+  },
+  {
+   "id": "S8",
+   "size": "medium, low",
+   "set": "kitchen (island)",
+   "key": 11,
+   "note": "the caliper clamps Bea mid-dance; she squeezes to mouse size"
+  },
+  {
+   "id": "S9",
+   "size": "macro insert",
+   "set": "kitchen (island top)",
+   "key": 16,
+   "note": "tiny Bea looks up; the cat's huge head slides into frame"
+  },
+  {
+   "id": "S10",
+   "size": "title, wide",
+   "set": "rooftop",
+   "key": 44,
+   "note": "the premise over the city at night; Juno with the toy couch and tiny suitcase"
+  },
+  {
+   "id": "S11",
+   "size": "schematic",
+   "set": "lab sheet",
+   "key": 50,
+   "note": "a balance: the big couch and the toy couch weigh the same, 40 kg each"
+  },
+  {
+   "id": "S12",
+   "size": "schematic",
+   "set": "lab sheet",
+   "key": 66,
+   "note": "the Earth in the calipers squeezes to 16 mm; the loupe shows it beside a marble"
+  },
+  {
+   "id": "S13",
+   "size": "schematic",
+   "set": "lab sheet (inked)",
+   "key": 26,
+   "note": "the sheet floods with ink; the Earth caves in to a black hole; r < 8.87 mm"
+  },
+  {
+   "id": "S14",
+   "size": "extreme close-up",
+   "set": "stairwell (soft)",
+   "key": 18,
+   "note": "Juno, worried; his paper edge turns pink"
+  },
+  {
+   "id": "S15",
+   "size": "wide",
+   "set": "stairwell (bottom)",
+   "key": 50,
+   "note": "the toy couch on the floor; the boards crack out from under it; Juno backs off"
+  }
+ ],
+ "edit": [
+  {
+   "shot": "S1",
+   "at": "Too"
+  },
+  {
+   "shot": "S2",
+   "at": "Shrink",
+   "look": "shrink"
+  },
+  {
+   "shot": "S3",
+   "at": "It"
+  },
+  {
+   "shot": "S4",
+   "at": "Couch"
+  },
+  {
+   "shot": "S5",
+   "at": "Shrink",
+   "look": "shrink"
+  },
+  {
+   "shot": "S6",
+   "at": "Still"
+  },
+  {
+   "shot": "S7",
+   "at": "Annoying"
+  },
+  {
+   "shot": "S8",
+   "at": "Shrink",
+   "look": "shrink"
+  },
+  {
+   "shot": "S9",
+   "at": "Uh"
+  },
+  {
+   "shot": "S10",
+   "at": "What"
+  },
+  {
+   "shot": "S11",
+   "at": "One"
+  },
+  {
+   "shot": "S12",
+   "at": "Shrink"
+  },
+  {
+   "shot": "S13",
+   "at": "and"
+  },
+  {
+   "shot": "S14",
+   "at": "That's"
+  },
+  {
+   "shot": "S15",
+   "at": "So"
+  }
+ ],
+ "tail": 1.1,
+ "fx": [
+  {
+   "at": "S2+15",
+   "kind": "flash",
+   "color": "#FF4FA3",
+   "o": 0.22
+  },
+  {
+   "at": "S5+15",
+   "kind": "flash",
+   "color": "#FF4FA3",
+   "o": 0.22
+  },
+  {
+   "at": "S8+15",
+   "kind": "flash",
+   "color": "#FF4FA3",
+   "o": 0.22
+  },
+  {
+   "at": "S10",
+   "kind": "flash",
+   "color": "#F3E7CD",
+   "o": 0.7
+  },
+  {
+   "at": "S13+4",
+   "kind": "flash",
+   "color": "#FF4FA3",
+   "o": 0.35
+  },
+  {
+   "at": "S15+10",
+   "kind": "shake",
+   "len": 8,
+   "amp": 6
+  },
+  {
+   "at": "S15+34",
+   "kind": "shake",
+   "len": 12,
+   "amp": 9
+  }
+ ],
+ "voice": {},
+ "gaps": {
+  "pairs": {
+   "anything|One": 0.6,
+   "oh|What": 0.4,
+   "real|So": 0.45
+  }
+ },
+ "sound": {
+  "clips": {
+   "room_tone": [
+    "quiet indoor room tone in the evening, faint distant city hum, no voices",
+    12.5
+   ],
+   "roof_wind": [
+    "a gentle evening breeze on a city rooftop, distant traffic",
+    7.0
+   ],
+   "title_boom": [
+    "a cinematic whoosh rising into a deep boom impact",
+    1.6
+   ],
+   "drone_hit": [
+    "a dark ominous low drone hit, deep cinematic horror sting",
+    2.6
+   ],
+   "music": [
+    "playful quirky cartoon background music, pizzicato strings, glockenspiel and soft bass, light and curious, 110 bpm, no vocals",
+    17.0
+   ],
+   "sparkle": [
+    "a short bright magical sparkle twinkle, cartoon",
+    0.8
+   ],
+   "pop": [
+    "a cartoon speech bubble pop, short and bright",
+    0.5
+   ],
+   "gulp": [
+    "a nervous cartoon gulp, short",
+    0.5
+   ],
+   "cat_chirp": [
+    "a cat making a short curious chirp meow",
+    0.6
+   ],
+   "counter_tick": [
+    "a fast mechanical counter ticking up rapidly, digits rolling over, getting faster",
+    1.6
+   ],
+   "shrink_clamp": [
+    "a crisp mechanical caliper clicking shut on an object, a quick ratchet tick and a soft metallic clamp, short",
+    0.6
+   ],
+   "shrink_zip": [
+    "a cartoon shrinking sound, a tight squeeze then a fast zip sliding down in pitch into a tiny pop, short",
+    0.8
+   ],
+   "suitcase_push": [
+    "someone pressing down hard on an overstuffed fabric suitcase, a creak, then the lid springing back up with a soft boing",
+    0.8
+   ],
+   "zipper": [
+    "a suitcase zipper zipped closed in one quick smooth pull",
+    0.9
+   ],
+   "couch_thud": [
+    "a heavy fabric couch jammed in a narrow staircase, a dull wooden thud and scrape against the wall",
+    0.8
+   ],
+   "tiny_thud": [
+    "a very small but very heavy object dropping onto a wooden stair, a dense surprisingly heavy thunk",
+    0.5
+   ],
+   "heavy_drop": [
+    "a sudden heavy weight yanking down, a deep comedic thump, cartoon, short",
+    0.6
+   ],
+   "kid_giggle": [
+    "a little girl giggling playfully, short, cartoon",
+    1.0
+   ],
+   "tiny_squeak": [
+    "a tiny high-pitched surprised squeak like a mouse, cartoon, short",
+    0.5
+   ],
+   "scale_clank": [
+    "a metal balance scale pan clanking down and settling level, small chains jingling",
+    0.8
+   ],
+   "black_hole": [
+    "a deep sub-bass whoosh sucking inward into silence, a cosmic implosion",
+    1.4
+   ],
+   "wood_creak": [
+    "old wooden floorboards creaking and groaning under a heavy weight, slowly starting to splinter",
+    2.4
+   ],
+   "wood_snap": [
+    "a wooden floorboard snapping with a sharp crack and splinters",
+    0.8
+   ]
+  },
+  "events": [
+   [
+    "S1",
+    "room_tone",
+    0.12,
+    "onset",
+    "S10"
+   ],
+   [
+    "S1+4",
+    "suitcase_push",
+    0.4
+   ],
+   [
+    "S2+4",
+    "shrink_clamp",
+    0.2
+   ],
+   [
+    "S2+10",
+    "shrink_zip",
+    0.4,
+    "onset",
+    "S3"
+   ],
+   [
+    "S3+3",
+    "zipper",
+    0.24
+   ],
+   [
+    "S3+13",
+    "sparkle",
+    0.18
+   ],
+   [
+    "S4+3",
+    "couch_thud",
+    0.26
+   ],
+   [
+    "S4+17",
+    "couch_thud",
+    0.2
+   ],
+   [
+    "S4+31",
+    "couch_thud",
+    0.22
+   ],
+   [
+    "S5+4",
+    "shrink_clamp",
+    0.2
+   ],
+   [
+    "S5+10",
+    "shrink_zip",
+    0.4,
+    "onset",
+    "S6"
+   ],
+   [
+    "S5+19",
+    "tiny_thud",
+    0.45
+   ],
+   [
+    "S6+5",
+    "heavy_drop",
+    0.24,
+    "onset",
+    "S6+12"
+   ],
+   [
+    "S6+20",
+    "gulp",
+    0.3
+   ],
+   [
+    "S7+2",
+    "kid_giggle",
+    0.16
+   ],
+   [
+    "S8+4",
+    "shrink_clamp",
+    0.2
+   ],
+   [
+    "S8+10",
+    "shrink_zip",
+    0.4,
+    "onset",
+    "S9"
+   ],
+   [
+    "S8+17",
+    "tiny_squeak",
+    0.28
+   ],
+   [
+    "S9+20",
+    "cat_chirp",
+    0.3,
+    "onset",
+    "S10"
+   ],
+   [
+    "S10",
+    "title_boom",
+    0.35,
+    "peak"
+   ],
+   [
+    "S10",
+    "roof_wind",
+    0.14,
+    "onset",
+    "S11"
+   ],
+   [
+    "S11+16",
+    "scale_clank",
+    0.4
+   ],
+   [
+    "S12+2",
+    "shrink_clamp",
+    0.3
+   ],
+   [
+    "S12+12",
+    "shrink_zip",
+    0.45
+   ],
+   [
+    "S12+14",
+    "counter_tick",
+    0.12,
+    "onset",
+    "S12+30"
+   ],
+   [
+    "S12+40",
+    "pop",
+    0.22
+   ],
+   [
+    "S13+4",
+    "black_hole",
+    0.17
+   ],
+   [
+    "S14",
+    "drone_hit",
+    0.16
+   ],
+   [
+    "S14",
+    "room_tone",
+    0.1,
+    "onset"
+   ],
+   [
+    "S15+8",
+    "wood_creak",
+    0.32
+   ],
+   [
+    "S15+33",
+    "wood_snap",
+    0.42
+   ]
+  ],
+  "music": {
+   "clip": "music",
+   "until": "S11"
+  },
+  "levels": {
+   "sfx_lu": -3.0,
+   "music_lu": -9.5
+  }
+ }
+}

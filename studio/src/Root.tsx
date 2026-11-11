@@ -4,6 +4,8 @@ import './engine/fonts';
 import { STUDIO } from './studio.config';
 import { EPISODES } from './episodes';
 import { CastSheet } from './CastSheet';
+import { ShrinkStyle, SHRINK_STYLE_FRAMES } from './episodes/shrink/StyleTest';
+import { CharacterDesigns, DESIGN_FRAMES } from './designs/CharacterDesigns';
 
 // Every episode gets two compositions: <Id> (the film) and <Id>Board (one frame per shot, at its key frame, for the
 // storyboard). Cast renders the cast sheet.
@@ -15,11 +17,13 @@ export const Root: React.FC = () => {
     <>
       {EPISODES.map((e) => (
         <React.Fragment key={e.id}>
-          <Composition id={e.id} component={e.Main} durationInFrames={Math.max(1, e.total)} {...common} />
-          <Composition id={`${e.id}Board`} component={e.Board} durationInFrames={Math.max(1, e.shotCount)} {...common} />
+          <Composition id={e.id} component={e.Main} durationInFrames={Math.max(1, e.total)} {...common} width={e.width ?? common.width} height={e.height ?? common.height} />
+          <Composition id={`${e.id}Board`} component={e.Board} durationInFrames={Math.max(1, e.shotCount)} {...common} width={e.width ?? common.width} height={e.height ?? common.height} />
         </React.Fragment>
       ))}
       <Composition id="Cast" component={CastSheet} durationInFrames={1} {...common} />
+      <Composition id="ShrinkStyle" component={ShrinkStyle} durationInFrames={SHRINK_STYLE_FRAMES} {...common} />
+      <Composition id="Designs" component={CharacterDesigns} durationInFrames={DESIGN_FRAMES} {...common} />
     </>
   );
 };

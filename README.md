@@ -1,7 +1,13 @@
 # What If animation: a free skill for Claude Code and OpenCode
 
-Type one line, "What if you could rewind 10 seconds?", and get a finished 15-25 second animated episode in the
-dusk-lit stick-figure style of the "What If" channels that took off on YouTube in October 2026.
+Type one line, "What if you could rewind 10 seconds?", and get a finished animated episode: 15-25 seconds at 16:9, or
+a vertical YouTube Short up to 60 seconds, in the format of the "What If" channels that took off on YouTube in
+October 2026.
+
+The house look is **Ink Stick on Night Print**: a world printed in two inks on paper, lit by its own lamps and
+windows, with one pink for the power, and stick figures cut from the same ink, told apart by size, hair, eyes and
+voice. They move more than the world around them (see `references/ink-stick.md`). The original dusk-lit look ships
+too, in the `rewind` and `copy-paste` examples.
 
 Every frame is drawn in code: the AI writes the scenes as SVG and Remotion renders them. The voice and the sound
 effects come from ElevenLabs. No image model, no video model, no drawing. It runs in Claude Code, or for free in
@@ -20,8 +26,8 @@ OpenCode with a free model. Made by [FreshStack](https://freshstack.ai).
    music bed, levels set against the voice.
 8. **Masters** the episode to -14 LUFS and reports what it cost.
 
-Why the character never changes: it isn't generated, it's a rig in code. The same function draws Pip in every
-shot, so there is nothing to drift.
+Why the character never changes: it isn't generated, it's a rig in code. The same function draws Juno (or Pip, in
+the dusk look) in every shot, so there is nothing to drift.
 
 ## What you need
 

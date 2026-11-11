@@ -37,11 +37,13 @@ def out_dir(slug):
 
 
 def stem(slug, name):
-    """An audio stem in public/<slug>/: name.wav, or name.mp3 (the shipped examples), or None."""
-    for ext in ('wav', 'mp3'):
-        q = STUDIO / 'public' / slug / f'{name}.{ext}'
-        if q.exists():
-            return q
+    """An audio stem in public/<slug>/: name.wav, or name.mp3 (the shipped examples), or None. For the voice, the
+    narration with the characters' own voices in it (voice-cast, from castvoice.py) wins over the plain narration."""
+    for n in (['voice-cast', 'voice'] if name == 'voice' else [name]):
+        for ext in ('wav', 'mp3'):
+            q = STUDIO / 'public' / slug / f'{n}.{ext}'
+            if q.exists():
+                return q
     return None
 
 

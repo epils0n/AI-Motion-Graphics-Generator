@@ -1,0 +1,320 @@
+{
+ "slug": "shrink",
+ "title": "WHAT IF YOU COULD SHRINK ANYTHING?",
+ "fps": 30,
+ "total": 624,
+ "segments": [
+  {
+   "shot": "S1",
+   "a": 0,
+   "b": 34,
+   "t0": 0,
+   "t1": 34,
+   "line": "Too much to pack?"
+  },
+  {
+   "shot": "S2",
+   "a": 34,
+   "b": 54,
+   "t0": 0,
+   "t1": 20,
+   "line": "Shrink.",
+   "look": "shrink"
+  },
+  {
+   "shot": "S3",
+   "a": 54,
+   "b": 82,
+   "t0": 0,
+   "t1": 28,
+   "line": "It all fits."
+  },
+  {
+   "shot": "S4",
+   "a": 82,
+   "b": 127,
+   "t0": 0,
+   "t1": 45,
+   "line": "Couch stuck on the stairs?"
+  },
+  {
+   "shot": "S5",
+   "a": 127,
+   "b": 147,
+   "t0": 0,
+   "t1": 20,
+   "line": "Shrink.",
+   "look": "shrink"
+  },
+  {
+   "shot": "S6",
+   "a": 147,
+   "b": 174,
+   "t0": 0,
+   "t1": 27,
+   "line": "Still heavy."
+  },
+  {
+   "shot": "S7",
+   "a": 174,
+   "b": 217,
+   "t0": 0,
+   "t1": 43,
+   "line": "Annoying little sister?"
+  },
+  {
+   "shot": "S8",
+   "a": 217,
+   "b": 237,
+   "t0": 0,
+   "t1": 20,
+   "line": "Shrink.",
+   "look": "shrink"
+  },
+  {
+   "shot": "S9",
+   "a": 237,
+   "b": 266,
+   "t0": 0,
+   "t1": 29,
+   "line": "Uh oh."
+  },
+  {
+   "shot": "S10",
+   "a": 266,
+   "b": 324,
+   "t0": 0,
+   "t1": 58,
+   "line": "What if you could shrink anything?"
+  },
+  {
+   "shot": "S11",
+   "a": 324,
+   "b": 409,
+   "t0": 0,
+   "t1": 85,
+   "line": "One catch: things get smaller, never lighter."
+  },
+  {
+   "shot": "S12",
+   "a": 409,
+   "b": 482,
+   "t0": 0,
+   "t1": 73,
+   "line": "Shrink the Earth to sixteen millimetres, a marble,"
+  },
+  {
+   "shot": "S13",
+   "a": 482,
+   "b": 519,
+   "t0": 0,
+   "t1": 37,
+   "line": "and it's a black hole."
+  },
+  {
+   "shot": "S14",
+   "a": 519,
+   "b": 547,
+   "t0": 0,
+   "t1": 28,
+   "line": "That's real."
+  },
+  {
+   "shot": "S15",
+   "a": 547,
+   "b": 624,
+   "t0": 0,
+   "t1": 77,
+   "line": "So why is the floor cracking?"
+  }
+ ],
+ "shots": [
+  {
+   "id": "S1",
+   "size": "medium wide",
+   "key": 9,
+   "len": 34,
+   "first": 0,
+   "line": "Too much to pack?",
+   "note": "Juno leans on an overflowing suitcase on the bed; the lid springs back up"
+  },
+  {
+   "id": "S2",
+   "size": "top-down insert",
+   "key": 15,
+   "len": 20,
+   "first": 34,
+   "line": "Shrink.",
+   "note": "the caliper clamps the heap of clothes; it squeezes down into the case"
+  },
+  {
+   "id": "S3",
+   "size": "medium close",
+   "key": 18,
+   "len": 28,
+   "first": 54,
+   "line": "It all fits.",
+   "note": "the case shut with room to spare; Juno zips it round, smug; a pink tag: CLOTHES x0.28"
+  },
+  {
+   "id": "S4",
+   "size": "wide",
+   "key": 24,
+   "len": 45,
+   "first": 82,
+   "line": "Couch stuck on the stairs?",
+   "note": "a couch wedged across the stairs; Juno shoves from below, it won't move"
+  },
+  {
+   "id": "S5",
+   "size": "medium",
+   "key": 17,
+   "len": 20,
+   "first": 127,
+   "line": "Shrink.",
+   "note": "the caliper clamps the couch; it squeezes to a toy and drops onto the tread"
+  },
+  {
+   "id": "S6",
+   "size": "medium close",
+   "key": 12,
+   "len": 27,
+   "first": 147,
+   "line": "Still heavy.",
+   "note": "Juno lifts the toy couch one-handed; his arm drops like it's full size; tag: STILL 40 kg"
+  },
+  {
+   "id": "S7",
+   "size": "wide two-shot",
+   "key": 20,
+   "len": 43,
+   "first": 174,
+   "line": "Annoying little sister?",
+   "note": "Bea dances on the island; Juno in the foreground has had enough; the cat watches"
+  },
+  {
+   "id": "S8",
+   "size": "medium, low",
+   "key": 11,
+   "len": 20,
+   "first": 217,
+   "line": "Shrink.",
+   "note": "the caliper clamps Bea mid-dance; she squeezes to mouse size"
+  },
+  {
+   "id": "S9",
+   "size": "macro insert",
+   "key": 16,
+   "len": 29,
+   "first": 237,
+   "line": "Uh oh.",
+   "note": "tiny Bea looks up; the cat's huge head slides into frame"
+  },
+  {
+   "id": "S10",
+   "size": "title, wide",
+   "key": 44,
+   "len": 58,
+   "first": 266,
+   "line": "What if you could shrink anything?",
+   "note": "the premise over the city at night; Juno with the toy couch and tiny suitcase"
+  },
+  {
+   "id": "S11",
+   "size": "schematic",
+   "key": 50,
+   "len": 85,
+   "first": 324,
+   "line": "One catch: things get smaller, never lighter.",
+   "note": "a balance: the big couch and the toy couch weigh the same, 40 kg each"
+  },
+  {
+   "id": "S12",
+   "size": "schematic",
+   "key": 66,
+   "len": 73,
+   "first": 409,
+   "line": "Shrink the Earth to sixteen millimetres, a marble,",
+   "note": "the Earth in the calipers squeezes to 16 mm; the loupe shows it beside a marble"
+  },
+  {
+   "id": "S13",
+   "size": "schematic",
+   "key": 26,
+   "len": 37,
+   "first": 482,
+   "line": "and it's a black hole.",
+   "note": "the sheet floods with ink; the Earth caves in to a black hole; r < 8.87 mm"
+  },
+  {
+   "id": "S14",
+   "size": "extreme close-up",
+   "key": 18,
+   "len": 28,
+   "first": 519,
+   "line": "That's real.",
+   "note": "Juno, worried; his paper edge turns pink"
+  },
+  {
+   "id": "S15",
+   "size": "wide",
+   "key": 50,
+   "len": 77,
+   "first": 547,
+   "line": "So why is the floor cracking?",
+   "note": "the toy couch on the floor; the boards crack out from under it; Juno backs off"
+  }
+ ],
+ "fx": [
+  {
+   "kind": "flash",
+   "color": "#FF4FA3",
+   "o": 0.22,
+   "f": 49
+  },
+  {
+   "kind": "flash",
+   "color": "#FF4FA3",
+   "o": 0.22,
+   "f": 142
+  },
+  {
+   "kind": "flash",
+   "color": "#FF4FA3",
+   "o": 0.22,
+   "f": 232
+  },
+  {
+   "kind": "flash",
+   "color": "#F3E7CD",
+   "o": 0.7,
+   "f": 266
+  },
+  {
+   "kind": "flash",
+   "color": "#FF4FA3",
+   "o": 0.35,
+   "f": 486
+  },
+  {
+   "kind": "shake",
+   "len": 8,
+   "amp": 6,
+   "f": 557
+  },
+  {
+   "kind": "shake",
+   "len": 12,
+   "amp": 9,
+   "f": 581
+  }
+ ],
+ "audio": {
+  "voiceVol": 0.8,
+  "sfxVol": 0.4198,
+  "musicVol": 0.1253,
+  "voice": "shrink/voice.mp3",
+  "sfx": "shrink/sfx.mp3",
+  "music": "shrink/music.mp3"
+ }
+}

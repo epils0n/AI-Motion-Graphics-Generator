@@ -56,6 +56,32 @@ Then run `mixcheck.py`: it lists the spoken moments where effects or music come 
 words that matter (the fact, the last line) by moving a hit into the pause after the word or lowering it; a title
 boom or a drone on the turn can stay. The proof clip had 30 such moments at 0 dB; copy-paste shipped with 14.
 
+## Character voices
+
+The narrator reads everything, but a character who speaks gets their own voice on their quoted lines. In the house
+look the cast all look alike in ink, so a voice is one of the ways to tell them apart. Write the quote, then tag it in
+the narration, so the tag stays in the narrator's voice: "'Our lab can make her big again,' he says. 'If you help
+us.'" Then list the lines in `episode.json`:
+
+```json
+"cast_voices": [{"who": "suit", "voice": "onwK4e9ZLuTAKqWW03F9",
+  "settings": {"stability": 0.55, "similarity_boost": 0.8, "style": 0.18, "use_speaker_boost": true},
+  "lines": [{"text": "Our lab can make her big again", "from": "'Our", "to": "again"},
+            {"text": "If you help us.", "from": "'If", "to": "us"}]}]
+```
+
+`from` and `to` are the first and last words of the narrator's reading (`word#2` for a later occurrence).
+`castvoice.py` sends each character's lines in one call and cuts each line out of the take. It fits the line into the
+narrator's slot, from its first word to the next word after its last, speeding it up by up to 1.3 times if it must,
+and matches its level to the narrator's on the same words. It writes `voice-cast.wav` at the narration's exact length.
+Takes are cached in `library/voices/`.
+
+- Pick a voice that's clearly different from the narrator's: the suit is "Daniel" (`onwK4e9ZLuTAKqWW03F9`), deep
+  and formal. A steadier `stability` (0.55) suits a character who's in control.
+- Keep a quote about as long as the narrator's reading of it. If it needs more than 1.15 times the speed, give the
+  narrator a longer pause there (`gaps.pairs`) and re-run `voice.py`, then `castvoice.py`.
+- Re-run `castvoice.py` after every `voice.py` run; the slots come from the new word times.
+
 ## Costs
 
 The voice's exact cost is in the account's generation history, which `voice.py` reads: the 356-character copy-paste

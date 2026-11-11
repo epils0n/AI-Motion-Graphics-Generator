@@ -5,6 +5,9 @@ ffmpeg scene detection. We learn the technique (timing, camera grammar, light); 
 our own. Nothing confirms how the viral channels make their videos, so never say or imply they're made with Claude
 or any other tool.
 
+The pace and the shot grammar here hold for every look. How the house look (Ink Stick on Night Print) draws the
+world and the cast is in `ink-stick.md`; where the two differ, `ink-stick.md` wins.
+
 ## Pace
 
 | | The genre | Our target for 15-25 s |
@@ -20,16 +23,20 @@ or any other tool.
 
 ## Light does most of the work
 
-- A dusk palette: purple to orange sky, a low sun with soft rays behind the subject.
-- **Every light comes from something you can see:** a window with the sun in it, a pendant, a wall light, a desk
-  lamp, string lights, a lit doorway, city windows. Pools of light, dark corners.
-- Muted, mid-dark walls (`S3` palette), so the practicals read; then `LightVeil` sinks the mid-tones further and
-  leaves holes where the light falls.
-- A warm rim light on every character edge, on the side facing the light (`rimId="rimR"` or `"rimL"`;
-  `"rimRed"` for the turn).
+- **Every light comes from something you can see:** a window with the sun or the moon in it, a pendant, a wall
+  light, a desk lamp, string lights, a lit doorway, city windows. Pools of light, dark corners.
+- Muted, mid-dark walls, so the practicals read; then `LightVeil` sinks the mid-tones further and leaves holes where
+  the light falls.
+- **The house look prints it:** each set goes through `<Print>`, which maps its brightness onto two inks and paper
+  (ink, deep teal, teal, mist, paper). Dark rooms land in deep teal, the light in mist and paper, and the only other
+  colour on screen is the power's pink. Story props that must read as the hero object (the pizza, the folder) can
+  stay unprinted.
+- **The cast catches the light as cut paper:** a paper edge on the side facing the light and a hard ink shadow on
+  the other (built into `InkFig`). In the original dusk look it's a warm rim light instead (`rimId="rimR"`/`"rimL"`).
 - Haze, dust in the beams (`Dust`), soft bokeh. Depth of field: foreground objects blurred dark (`Foreground`),
   the middle sharp, the background soft on close-ups (`blur16` on a scaled-up set).
-- Grain on twos and a soft vignette finish the frame (the engine's `Grade`).
+- The frame is finished per shot by `PaperFinish` (a vignette, a paper mottle and a fine halftone) in the house look,
+  and by the engine's `Grade` (grain on twos and a vignette) in the dusk look.
 
 ## Shot vocabulary
 
@@ -45,16 +52,22 @@ or any other tool.
 ## Characters
 
 - Mostly three-quarter or profile (`yaw`), rarely face-on; the face slides toward the side they face.
-- They animate very little: holds are near-still, with small hand changes. Expressions swap instantly through a
-  blink (`faceAt`), never morph.
-- Life comes from around them: a one-frame flash on an impact, focus rings, a timer, floating labels, dust, steam,
-  a swaying lamp, a slow push-in.
-- One hero who never changes. Every costume is a `Look` on the one rig, so it can't drift.
+- Expressions swap instantly through a blink (`face3At`, `faceAt` on the old rig), never morph.
+- **The house look animates the cast more than the genre does.** The genre's characters hold near-still. Ours never
+  freeze: limbs bend in curves, heads and hair trail every move and overshoot, they breathe and sway in holds, blink
+  on their own and squash on landings. The world around them stays slow, so the cast is always the liveliest thing
+  in frame. (The person who set the house look found near-still figures stiff.)
+- Life also comes from around them: a one-frame flash on an impact, a readout, a tag, dust, a swaying lamp, a slow
+  push-in.
+- **Told apart without colour:** the cast are all the same black ink, so each has a different height, hair, eyes and
+  one telling shape, and the ones who speak have their own voices.
+- One hero who never changes, drawn by one rig, so nothing can drift.
 
 ## On-screen text
 
 Almost none. The title card, and small UI readouts in the mono face (a timer, a chip naming the power, a short
-label). No speech bubbles, no "HA HA", no captions of the voice.
+label, a specimen tag). No speech bubbles, no "HA HA", no captions of the voice. On a vertical Short, keep text out
+of the right edge and the bottom quarter (YouTube's buttons and captions sit there) and clear of the power's chip.
 
 ## The storyboard self-check (step 5)
 
@@ -67,17 +80,26 @@ again. Only a board that passes goes to animation.
    at least one high or low angle.
 3. **Light from a source.** Every shot has a visible practical or sunlight, and the subject sits in or against a
    pool of it. Mid-tones are dark; nothing is evenly lit.
-4. **The character pops.** The face is the brightest, sharpest thing in its area; the rim light is on the lit side;
-   no dark limb on a dark wall.
+4. **The character pops.** In the house look, the black figure sits against a lit area (a window, a lamp's pool, a
+   lit wall), its paper edge is on the lit side, and its paper eyes are the brightest thing on it. In the dusk look,
+   the face is the brightest, sharpest thing in its area and the rim light is on the lit side. Either way, no dark
+   limb on a dark wall.
+4a. **Two inks and one pink.** Every set is printed; pink appears only on the power (the caliper, the squeeze, the
+   glow round shrunk things, its flash) and nowhere else.
+4b. **Flat limbs read.** No arm or leg shrinks into a stub, joints sit inside the body, and no neck or arm crosses a
+   face unless the action puts it there.
 5. **Depth.** A blurred dark foreground in about a third of the shots; soft backgrounds on close-ups.
 6. **The world is full.** Wides show 20 or more designed objects; no empty wall, no floating furniture. Everything
    that stands has legs and a contact shadow.
 7. **Perspective holds.** Objects sit on their surfaces, at the right scale for the character, toward the room's
    vanishing point.
 8. **Acting matches the line.** The expression and pose say the line without the voice; the hand that moves is the
-   near one (with `yaw < 0` the far arm hides behind the body).
+   near one (with `yaw < 0` the far arm hides behind the body). **Eyelines:** when the line says someone looks at
+   something or someone, their head and eyes point there (in the shrink Short, both of them look down at Bea on
+   "he looks at your sister").
 9. **Continuity.** Same costume, same set layout, same props in the same places across shots of one place.
-10. **Only the title and readouts as text,** spelled right, inside the frame.
+10. **Only the title and readouts as text,** spelled right, inside the frame, and not colliding with each other (a
+    readout over the power's chip, a tag over a face).
 11. **Ours.** Nothing resembles a famous character, a channel's hero or a brand.
 
 ## The motion check (step 6)
@@ -86,7 +108,11 @@ Pull frame grids of every action shot with `motiongrid.py` and read them like a 
 
 - Anticipation before a big move (a crouch before a step, a wind-up before a grab), a hold of 2 frames on the beat
   where the character realises, overshoot and settle on landings and catches.
-- Nothing static for more than about a second: something always moves (dust, steam, a sway, a push-in).
+- Follow-through reads: after a big move the head and hair (Juno's spikes, Bea's bunches) lag, overshoot and settle
+  within about half a second. If a move looks rigid, its keys are too close together for the springs to show.
+- Nothing static for more than about a second: something always moves (dust, steam, a sway, a push-in), and the
+  cast are always breathing and blinking.
+- Heads and eyes go where the line says; props stay pinned to the hand through the whole move.
 - The action lands on its word, within about 3 frames.
 - Reversals read backwards (every move derives from `t`, so it does).
 - No pops: a prop never jumps between frames unless it's meant to (a paste, a flash).

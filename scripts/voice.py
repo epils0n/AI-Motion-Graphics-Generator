@@ -113,3 +113,5 @@ out = [{'w': w['w'], 's': round(shift(w['s']), 3), 'e': round(shift(w['e']), 3),
 save_json(ep_dir(slug) / 'words.json', out)
 print(f'Tightened {len(cuts)} pauses, removed {sum(e - s for s, e in cuts):.2f} s: {len(x) / SR:.2f} s -> {len(y) / SR:.2f} s')
 print(' '.join(f"{w['w']}@{w['s']}" for w in out))
+if ep.get('cast_voices'):
+    print('This episode has cast_voices: run castvoice.py now, so voice-cast.wav matches this narration.')

@@ -1,0 +1,989 @@
+{
+ "id": "Shrink60Stick",
+ "slug": "shrink60",
+ "topic": "What if you could shrink anything? (60 s Short, vertical)",
+ "title": [
+  "WHAT IF YOU COULD",
+  "SHRINK ANYTHING?"
+ ],
+ "accent": "SHRINK",
+ "style": "NIGHT PRINT world (sets in two inks, pink power) with the Ink Stick cast (the house look, final). Also built in Cel 3D, Paper Fold, Plush and Painted 2D. 1080 x 1920 for YouTube Shorts.",
+ "power": {
+  "word": "Shrink.",
+  "rule": "anything you point at, down to any size; it gets smaller, never lighter",
+  "look": "pink caliper jaws clamp the thing on a ruler, the readout counts down, the thing squeezes down with pink ghost trails and keeps a pink edge"
+ },
+ "script": [
+  {
+   "beat": "1 cold open, demo 1 (small and selfish)",
+   "text": "Too much to pack? Shrink. It all fits."
+  },
+  {
+   "beat": "1 cold open, demo 2 (useful, the first hint of the cost)",
+   "text": "Couch stuck on the stairs? Shrink. Still heavy."
+  },
+  {
+   "beat": "1 cold open, demo 3 (a little uncanny)",
+   "text": "Annoying little sister? Shrink. Uh oh."
+  },
+  {
+   "beat": "2 the premise (title card)",
+   "text": "What if you could shrink anything?"
+  },
+  {
+   "beat": "3 the fun part",
+   "text": "Homework mountain? Shrink. A whole pizza? Shrink. One bite. Still every calorie."
+  },
+  {
+   "beat": "4 the not-so-fun part: the rule and the real science",
+   "text": "Because here's the catch: things get smaller, never lighter. Shrink something to a twentieth of its size, and it's eight thousand times denser. Shrink the Earth to sixteen millimetres, a marble, and it's a black hole. That's real."
+  },
+  {
+   "beat": "4 the consequence, on screen",
+   "text": "And that toy couch? Still forty kilos. The floor gives way."
+  },
+  {
+   "beat": "5 someone powerful notices",
+   "text": "Next morning, a man in a suit knocks at your door. He's seen the hole in the floor. He knows what you can do. And he wants you to shrink something for him. Something big."
+  },
+  {
+   "beat": "6 a choice with family at stake",
+   "text": "Then he looks at your sister, still mouse-sized. 'Our lab can make her big again,' he says. 'If you help us.'"
+  },
+  {
+   "beat": "7 cliffhanger",
+   "text": "What would you do? Part one."
+  }
+ ],
+ "science": [
+  {
+   "claim": "Shrink something to a twentieth of its size, and it's eight thousand times denser.",
+   "working": "Under the rule (smaller, never lighter) the mass stays the same while every length is scaled by 1/20, so the volume is scaled by (1/20)^3 = 1/8000. Density = mass / volume, so it goes up 8,000 times.",
+   "source": "Density = mass / volume; volume scales with the cube of length"
+  },
+  {
+   "claim": "Shrink the Earth to sixteen millimetres (a marble) and it's a black hole.",
+   "working": "A mass becomes a black hole once it fits inside its Schwarzschild radius, r = 2GM/c^2. For Earth: 2 x 6.674e-11 x 5.972e24 / (2.998e8)^2 = 8.87e-3 m, a radius of 8.87 mm (17.7 mm across). A standard 16 mm marble (radius 8 mm) is inside that, so all of Earth's mass in a 16 mm ball is a black hole.",
+   "source": "Schwarzschild radius r_s = 2GM/c^2; Earth's mass 5.972e24 kg (NASA Earth Fact Sheet); G and c from CODATA 2018; standard marble 5/8 inch (16 mm)"
+  },
+  {
+   "claim": "A shrunk pizza still has every calorie.",
+   "working": "The power's rule keeps all the matter, and the energy in food is in its matter (its chemical bonds), so the bite holds all the pizza's calories. No number is stated on screen.",
+   "source": "The episode's rule; food energy is chemical energy stored in the food's mass"
+  },
+  {
+   "claim": "The toy couch is still forty kilos.",
+   "working": "Story fact, not science: the couch is set at 40 kg (a light two-seat couch), the same as in the 20 s cut.",
+   "source": "Story"
+  }
+ ],
+ "cast": [
+  "juno",
+  "bea",
+  "suit"
+ ],
+ "voice": {},
+ "gaps": {
+  "word": 0.16,
+  "comma": 0.34,
+  "sentence": 0.48,
+  "question": 0.62,
+  "pairs": {
+   "anything|Homework": 0.9,
+   "calorie|Because": 0.7,
+   "real|And": 0.75,
+   "way|Next": 0.95,
+   "big|Then": 0.85,
+   "us|What": 1.0,
+   "do|Part": 0.8,
+   "oh|What": 0.55
+  }
+ },
+ "shots": [
+  {
+   "id": "S1",
+   "size": "medium wide",
+   "set": "bedroom",
+   "key": 9,
+   "note": "Juno leans on the overflowing suitcase; the lid springs back"
+  },
+  {
+   "id": "S2",
+   "size": "top-down insert",
+   "set": "bedroom (the case)",
+   "key": 15,
+   "note": "the caliper clamps the heap; it squeezes into the case"
+  },
+  {
+   "id": "S3",
+   "size": "medium close",
+   "set": "bedroom",
+   "key": 18,
+   "note": "the case zipped shut with room to spare; Juno smug; tag CLOTHES x0.28"
+  },
+  {
+   "id": "S4",
+   "size": "wide",
+   "set": "stairwell",
+   "key": 24,
+   "note": "a couch wedged on the stairs; Juno shoves, it won't move"
+  },
+  {
+   "id": "S5",
+   "size": "medium",
+   "set": "stairwell",
+   "key": 17,
+   "note": "the caliper clamps the couch; it squeezes to a toy and drops"
+  },
+  {
+   "id": "S6",
+   "size": "medium close",
+   "set": "stairwell",
+   "key": 12,
+   "note": "Juno lifts the toy couch; his arm drops like it's full size"
+  },
+  {
+   "id": "S7",
+   "size": "wide two-shot",
+   "set": "kitchen",
+   "key": 20,
+   "note": "Bea dances on the island; Juno in the foreground has had enough"
+  },
+  {
+   "id": "S8",
+   "size": "medium, low",
+   "set": "kitchen (island)",
+   "key": 11,
+   "note": "the caliper clamps Bea; she squeezes to mouse size"
+  },
+  {
+   "id": "S9",
+   "size": "macro insert",
+   "set": "kitchen (island top)",
+   "key": 16,
+   "note": "tiny Bea looks up; the cat's head slides in"
+  },
+  {
+   "id": "S10",
+   "size": "title, wide",
+   "set": "rooftop",
+   "key": 40,
+   "note": "the premise over the city; Juno with the toy couch and the tiny case"
+  },
+  {
+   "id": "S11",
+   "size": "medium",
+   "set": "study",
+   "key": 18,
+   "note": "Juno looks up at a mountain of homework on the desk"
+  },
+  {
+   "id": "S12",
+   "size": "medium",
+   "set": "study",
+   "key": 16,
+   "note": "the caliper clamps the stacks; they squeeze to a pad"
+  },
+  {
+   "id": "S13",
+   "size": "top-down insert",
+   "set": "kitchen (island)",
+   "key": 20,
+   "note": "a whole pizza in its box"
+  },
+  {
+   "id": "S14",
+   "size": "top-down insert",
+   "set": "kitchen (island)",
+   "key": 15,
+   "note": "the caliper clamps the pizza; it squeezes to a coin"
+  },
+  {
+   "id": "S15",
+   "size": "close-up",
+   "set": "kitchen (soft)",
+   "key": 8,
+   "note": "Juno pops the coin-sized pizza in his mouth"
+  },
+  {
+   "id": "S16",
+   "size": "medium",
+   "set": "kitchen",
+   "key": 22,
+   "note": "his belly swells: still every calorie"
+  },
+  {
+   "id": "S17",
+   "size": "schematic",
+   "set": "lab sheet",
+   "key": 64,
+   "note": "a balance: the couch and the toy couch weigh the same, 40 kg"
+  },
+  {
+   "id": "S18",
+   "size": "schematic",
+   "set": "lab sheet",
+   "key": 80,
+   "note": "a cube squeezes to 1/20; x8,000 denser counts up"
+  },
+  {
+   "id": "S19",
+   "size": "schematic",
+   "set": "lab sheet",
+   "key": 72,
+   "note": "the Earth squeezes to 16 mm; the loupe shows it beside a marble"
+  },
+  {
+   "id": "S20",
+   "size": "schematic",
+   "set": "lab sheet (inked)",
+   "key": 28,
+   "note": "the sheet floods with ink; the Earth caves in to a black hole"
+  },
+  {
+   "id": "S21",
+   "size": "extreme close-up",
+   "set": "stairwell (soft)",
+   "key": 18,
+   "note": "Juno, worried; his edge pink"
+  },
+  {
+   "id": "S22",
+   "size": "wide",
+   "set": "stairwell (bottom)",
+   "key": 56,
+   "note": "the toy couch on the floor; tag STILL 40 kg; the first cracks"
+  },
+  {
+   "id": "S23",
+   "size": "medium",
+   "set": "stairwell (bottom)",
+   "key": 20,
+   "note": "the floor gives way: the couch drops through, Juno jumps back"
+  },
+  {
+   "id": "S24",
+   "size": "wide",
+   "set": "hall (morning)",
+   "key": 22,
+   "note": "next morning: Juno walks to the front door, from behind; clock 07:42"
+  },
+  {
+   "id": "S25",
+   "size": "insert",
+   "set": "hall (the door)",
+   "key": 10,
+   "note": "three knocks shake the door"
+  },
+  {
+   "id": "S26",
+   "size": "wide, low",
+   "set": "hall",
+   "key": 30,
+   "note": "the door opens: the man in the suit, backlit, looks down at the hole"
+  },
+  {
+   "id": "S27",
+   "size": "close-up",
+   "set": "hall (soft)",
+   "key": 20,
+   "note": "the suit, stern, turns to Juno"
+  },
+  {
+   "id": "S28",
+   "size": "two-shot",
+   "set": "hall",
+   "key": 36,
+   "note": "the suit holds out a folder; Juno reaches for it"
+  },
+  {
+   "id": "S29",
+   "size": "top-down insert",
+   "set": "hall (floor)",
+   "key": 30,
+   "note": "the folder opens: a photo of the Moon, ringed in pink"
+  },
+  {
+   "id": "S30",
+   "size": "low angle",
+   "set": "hall (floor)",
+   "key": 40,
+   "note": "tiny Bea between Juno's shoe and the suit's shoes"
+  },
+  {
+   "id": "S31",
+   "size": "close-up",
+   "set": "hall (soft)",
+   "key": 30,
+   "note": "the suit leans in, smug: our lab can make her big again"
+  },
+  {
+   "id": "S32",
+   "size": "extreme close-up",
+   "set": "stairwell (soft)",
+   "key": 20,
+   "note": "Juno, torn; his edge pink"
+  },
+  {
+   "id": "S33",
+   "size": "wide",
+   "set": "hall",
+   "key": 30,
+   "note": "the three of them: the suit in the door, Juno, tiny Bea; the light goes pink"
+  },
+  {
+   "id": "S34",
+   "size": "card",
+   "set": "",
+   "key": 30,
+   "note": "PART 1"
+  }
+ ],
+ "edit": [
+  {
+   "shot": "S1",
+   "at": "Too"
+  },
+  {
+   "shot": "S2",
+   "at": "Shrink",
+   "look": "shrink"
+  },
+  {
+   "shot": "S3",
+   "at": "It"
+  },
+  {
+   "shot": "S4",
+   "at": "Couch"
+  },
+  {
+   "shot": "S5",
+   "at": "Shrink",
+   "look": "shrink"
+  },
+  {
+   "shot": "S6",
+   "at": "Still"
+  },
+  {
+   "shot": "S7",
+   "at": "Annoying"
+  },
+  {
+   "shot": "S8",
+   "at": "Shrink",
+   "look": "shrink"
+  },
+  {
+   "shot": "S9",
+   "at": "Uh"
+  },
+  {
+   "shot": "S10",
+   "at": "What"
+  },
+  {
+   "shot": "S11",
+   "at": "Homework"
+  },
+  {
+   "shot": "S12",
+   "at": "Shrink",
+   "look": "shrink"
+  },
+  {
+   "shot": "S13",
+   "at": "A"
+  },
+  {
+   "shot": "S14",
+   "at": "Shrink",
+   "look": "shrink"
+  },
+  {
+   "shot": "S15",
+   "at": "One"
+  },
+  {
+   "shot": "S16",
+   "at": "Still"
+  },
+  {
+   "shot": "S17",
+   "at": "Because"
+  },
+  {
+   "shot": "S18",
+   "at": "Shrink"
+  },
+  {
+   "shot": "S19",
+   "at": "Shrink"
+  },
+  {
+   "shot": "S20",
+   "at": "and"
+  },
+  {
+   "shot": "S21",
+   "at": "That's"
+  },
+  {
+   "shot": "S22",
+   "at": "And"
+  },
+  {
+   "shot": "S23",
+   "at": "The"
+  },
+  {
+   "shot": "S24",
+   "at": "Next"
+  },
+  {
+   "shot": "S25",
+   "at": "knocks"
+  },
+  {
+   "shot": "S26",
+   "at": "He's"
+  },
+  {
+   "shot": "S27",
+   "at": "He"
+  },
+  {
+   "shot": "S28",
+   "at": "And"
+  },
+  {
+   "shot": "S29",
+   "at": "Something#2"
+  },
+  {
+   "shot": "S30",
+   "at": "Then"
+  },
+  {
+   "shot": "S31",
+   "at": "s:47.82"
+  },
+  {
+   "shot": "S32",
+   "at": "s:50.36"
+  },
+  {
+   "shot": "S33",
+   "at": "What"
+  },
+  {
+   "shot": "S34",
+   "at": "Part"
+  }
+ ],
+ "tail": 2.6,
+ "fx": [
+  {
+   "at": "S2+15",
+   "kind": "flash",
+   "color": "#FF4FA3",
+   "o": 0.22
+  },
+  {
+   "at": "S5+15",
+   "kind": "flash",
+   "color": "#FF4FA3",
+   "o": 0.22
+  },
+  {
+   "at": "S8+15",
+   "kind": "flash",
+   "color": "#FF4FA3",
+   "o": 0.22
+  },
+  {
+   "at": "S10",
+   "kind": "flash",
+   "color": "#F3E7CD",
+   "o": 0.7
+  },
+  {
+   "at": "S12+15",
+   "kind": "flash",
+   "color": "#FF4FA3",
+   "o": 0.2
+  },
+  {
+   "at": "S14+15",
+   "kind": "flash",
+   "color": "#FF4FA3",
+   "o": 0.2
+  },
+  {
+   "at": "S20+4",
+   "kind": "flash",
+   "color": "#FF4FA3",
+   "o": 0.35
+  },
+  {
+   "at": "S23+31",
+   "kind": "shake",
+   "len": 14,
+   "amp": 14
+  },
+  {
+   "at": "S23+31",
+   "kind": "flash",
+   "color": "#F3E7CD",
+   "o": 0.3
+  },
+  {
+   "at": "S34",
+   "kind": "flash",
+   "color": "#FF4FA3",
+   "o": 0.45
+  }
+ ],
+ "sound": {
+  "clips": {
+   "room_tone": [
+    "quiet indoor room tone in the evening, faint distant city hum, no voices",
+    12.5
+   ],
+   "roof_wind": [
+    "a gentle evening breeze on a city rooftop, distant traffic",
+    7.0
+   ],
+   "title_boom": [
+    "a cinematic whoosh rising into a deep boom impact",
+    1.6
+   ],
+   "drone_hit": [
+    "a dark ominous low drone hit, deep cinematic horror sting",
+    2.6
+   ],
+   "sparkle": [
+    "a short bright magical sparkle twinkle, cartoon",
+    0.8
+   ],
+   "pop": [
+    "a cartoon speech bubble pop, short and bright",
+    0.5
+   ],
+   "gulp": [
+    "a nervous cartoon gulp, short",
+    0.5
+   ],
+   "cat_chirp": [
+    "a cat making a short curious chirp meow",
+    0.6
+   ],
+   "counter_tick": [
+    "a fast mechanical counter ticking up rapidly, digits rolling over, getting faster",
+    1.6
+   ],
+   "shrink_clamp": [
+    "a crisp mechanical caliper clicking shut on an object, a quick ratchet tick and a soft metallic clamp, short",
+    0.6
+   ],
+   "shrink_zip": [
+    "a cartoon shrinking sound, a tight squeeze then a fast zip sliding down in pitch into a tiny pop, short",
+    0.8
+   ],
+   "suitcase_push": [
+    "someone pressing down hard on an overstuffed fabric suitcase, a creak, then the lid springing back up with a soft boing",
+    0.8
+   ],
+   "zipper": [
+    "a suitcase zipper zipped closed in one quick smooth pull",
+    0.9
+   ],
+   "couch_thud": [
+    "a heavy fabric couch jammed in a narrow staircase, a dull wooden thud and scrape against the wall",
+    0.8
+   ],
+   "tiny_thud": [
+    "a very small but very heavy object dropping onto a wooden stair, a dense surprisingly heavy thunk",
+    0.5
+   ],
+   "heavy_drop": [
+    "a sudden heavy weight yanking down, a deep comedic thump, cartoon, short",
+    0.6
+   ],
+   "kid_giggle": [
+    "a little girl giggling playfully, short, cartoon",
+    1.0
+   ],
+   "tiny_squeak": [
+    "a tiny high-pitched surprised squeak like a mouse, cartoon, short",
+    0.5
+   ],
+   "scale_clank": [
+    "a metal balance scale pan clanking down and settling level, small chains jingling",
+    0.8
+   ],
+   "black_hole": [
+    "a deep sub-bass whoosh sucking inward into silence, a cosmic implosion",
+    1.4
+   ],
+   "wood_creak": [
+    "old wooden floorboards creaking and groaning under a heavy weight, slowly starting to splinter",
+    2.4
+   ],
+   "wood_snap": [
+    "a wooden floorboard snapping with a sharp crack and splinters",
+    0.8
+   ],
+   "cookie_crunch": [
+    "one crunchy bite into a chocolate chip cookie, close up",
+    0.6
+   ],
+   "belly_boing": [
+    "a cartoon belly inflating like a balloon, a rubbery stretch and a springy boing, short",
+    1.0
+   ],
+   "floor_break": [
+    "old wooden floorboards cracking and breaking apart, a small heavy object crashing through the floor into the dark below",
+    1.6
+   ],
+   "door_knock": [
+    "three firm knocks on a wooden front door, close, evenly spaced",
+    1.6
+   ],
+   "door_open": [
+    "a front door unlatching and swinging open with a soft creak, morning birdsong outside",
+    1.4
+   ],
+   "morning_birds": [
+    "quiet early morning birdsong outside a house, soft and distant, no voices",
+    10.0
+   ],
+   "folder_open": [
+    "a cardboard folder flipped open, a soft paper flap and slide",
+    0.6
+   ],
+   "tension_bed": [
+    "dark suspenseful cinematic underscore, low pulsing synth and soft strings, slow and ominous, no vocals",
+    20.0
+   ],
+   "music": [
+    "playful quirky cartoon background music, pizzicato strings, glockenspiel and soft bass, light and curious, 110 bpm, no vocals",
+    17.0
+   ]
+  },
+  "events": [
+   [
+    "S1",
+    "room_tone",
+    0.12,
+    "onset",
+    "S10"
+   ],
+   [
+    "S1+4",
+    "suitcase_push",
+    0.4
+   ],
+   [
+    "S2+4",
+    "shrink_clamp",
+    0.2
+   ],
+   [
+    "S2+10",
+    "shrink_zip",
+    0.4,
+    "onset",
+    "S3"
+   ],
+   [
+    "S3+3",
+    "zipper",
+    0.24
+   ],
+   [
+    "S3+13",
+    "sparkle",
+    0.18
+   ],
+   [
+    "S4+3",
+    "couch_thud",
+    0.26
+   ],
+   [
+    "S4+17",
+    "couch_thud",
+    0.2
+   ],
+   [
+    "S4+31",
+    "couch_thud",
+    0.22
+   ],
+   [
+    "S5+4",
+    "shrink_clamp",
+    0.2
+   ],
+   [
+    "S5+10",
+    "shrink_zip",
+    0.4,
+    "onset",
+    "S6"
+   ],
+   [
+    "S5+19",
+    "tiny_thud",
+    0.45
+   ],
+   [
+    "S6+5",
+    "heavy_drop",
+    0.24,
+    "onset",
+    "S6+12"
+   ],
+   [
+    "S6+26",
+    "gulp",
+    0.25
+   ],
+   [
+    "S7+2",
+    "kid_giggle",
+    0.16
+   ],
+   [
+    "S8+4",
+    "shrink_clamp",
+    0.2
+   ],
+   [
+    "S8+10",
+    "shrink_zip",
+    0.4,
+    "onset",
+    "S9"
+   ],
+   [
+    "S8+17",
+    "tiny_squeak",
+    0.28
+   ],
+   [
+    "S9+20",
+    "cat_chirp",
+    0.3,
+    "onset",
+    "S10"
+   ],
+   [
+    "S10",
+    "title_boom",
+    0.35,
+    "peak"
+   ],
+   [
+    "S10",
+    "roof_wind",
+    0.14,
+    "onset",
+    "S11"
+   ],
+   [
+    "S11",
+    "room_tone",
+    0.1,
+    "onset",
+    "S17"
+   ],
+   [
+    "S12+4",
+    "shrink_clamp",
+    0.2
+   ],
+   [
+    "S12+10",
+    "shrink_zip",
+    0.4,
+    "onset",
+    "S13"
+   ],
+   [
+    "S13+6",
+    "sparkle",
+    0.15
+   ],
+   [
+    "S14+4",
+    "shrink_clamp",
+    0.2
+   ],
+   [
+    "S14+10",
+    "shrink_zip",
+    0.4,
+    "onset",
+    "S15"
+   ],
+   [
+    "S15+10",
+    "cookie_crunch",
+    0.35
+   ],
+   [
+    "S16+33",
+    "belly_boing",
+    0.3
+   ],
+   [
+    "S17+58",
+    "scale_clank",
+    0.4
+   ],
+   [
+    "S18+18",
+    "shrink_zip",
+    0.34
+   ],
+   [
+    "S18+56",
+    "counter_tick",
+    0.14,
+    "onset",
+    "S18+76"
+   ],
+   [
+    "S18+88",
+    "pop",
+    0.2
+   ],
+   [
+    "S19+2",
+    "shrink_clamp",
+    0.24
+   ],
+   [
+    "S19+14",
+    "shrink_zip",
+    0.38
+   ],
+   [
+    "S19+46",
+    "pop",
+    0.22
+   ],
+   [
+    "S20+4",
+    "black_hole",
+    0.17
+   ],
+   [
+    "S21",
+    "drone_hit",
+    0.16
+   ],
+   [
+    "S21",
+    "room_tone",
+    0.1,
+    "onset",
+    "S24"
+   ],
+   [
+    "S22+60",
+    "wood_creak",
+    0.3
+   ],
+   [
+    "S23+29",
+    "wood_snap",
+    0.3
+   ],
+   [
+    "S23+31",
+    "floor_break",
+    0.45,
+    "onset",
+    "S24"
+   ],
+   [
+    "S24",
+    "morning_birds",
+    0.07,
+    "onset",
+    "S34"
+   ],
+   [
+    "S25+18",
+    "door_knock",
+    0.28,
+    "onset",
+    "S26"
+   ],
+   [
+    "S26",
+    "door_open",
+    0.3
+   ],
+   [
+    "S26",
+    "tension_bed",
+    0.085,
+    "onset",
+    "S34"
+   ],
+   [
+    "S29",
+    "folder_open",
+    0.3
+   ],
+   [
+    "S33+24",
+    "drone_hit",
+    0.2
+   ],
+   [
+    "S34+40",
+    "title_boom",
+    0.3,
+    "peak"
+   ]
+  ],
+  "music": {
+   "clip": "music",
+   "until": "S17"
+  },
+  "levels": {
+   "sfx_lu": -3.0,
+   "music_lu": -9.5
+  }
+ },
+ "cast_voices": [
+  {
+   "who": "suit",
+   "voice": "onwK4e9ZLuTAKqWW03F9",
+   "settings": {
+    "stability": 0.55,
+    "similarity_boost": 0.8,
+    "style": 0.18,
+    "use_speaker_boost": true
+   },
+   "lines": [
+    {
+     "text": "Our lab can make her big again",
+     "from": "'Our",
+     "to": "again"
+    },
+    {
+     "text": "If you help us.",
+     "from": "'If",
+     "to": "us"
+    }
+   ]
+  }
+ ]
+}

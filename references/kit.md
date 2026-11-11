@@ -1,7 +1,81 @@
 # The kit: building blocks for shots
 
-Everything imports from one place: `import { Study, Hero, poseAt, Marquee, ... } from '../../engine';`. The world is
-1920 x 1080 units; a shot draws in world units and frames them with a camera.
+Sets, the room kit, light and UI import from the engine: `import { Kitchen, KITCHEN, kf, easeOut, ... } from
+'../../engine';`. The house look (the Ink Stick cast, the Night Print print and finish, the power's caliper) imports
+from the Ink kit: `import { InkFrame, InkFig, ... } from '../../kit/ink';`. The world is 1920 x 1080 units; a shot
+draws in world units and frames them with a camera.
+
+## The Ink Stick kit (`src/kit/ink.tsx`): the house look
+
+A shot in the house look, a Short (1080 x 1920):
+
+```tsx
+const S7: React.FC<ShotProps> = ({ t, len }) => {
+  const at = inkStand(KITCHEN, 0.62, 0.42); // feet and scale on the kitchen floor
+  const P = pose3At(t, [
+    { f: 0, p: { look: [-0.6, 0.2] } as Partial<Pose3> },
+    { f: 6, p: { armL: { abd: 26, flex: 84, bend: 2 }, point: 'L', lean: 6 }, ease: easeOut }, // the point
+  ]);
+  return (
+    <InkFrame>
+      <g transform={camV(kf(t, [[0, 960], [len, 950]]), 560, kf(t, [[0, 2.2], [len, 2.3]]))}>
+        <Print>
+          <Kitchen t={t + 84} id="k7" veil={0.42} />
+        </Print>
+        <InkFig who="juno" P={{ ...P, ...face3At(t, [[0, 'neutral'], [7, 'smug']]) }} yaw={-0.7} x={at.x} y={at.y} s={at.s} id="s7j" />
+        <Print>
+          <KitchenIsland />
+        </Print>
+      </g>
+    </InkFrame>
+  );
+};
+```
+
+| Block | What |
+|---|---|
+| `InkFrame` | a shot's frame: the print's filters, an ink ground, the picture, then `PaperFinish` (vignette, mottle, halftone; `dots`, `vig`; `w`, `h` default to a Short, pass 1920 x 1080 for 16:9) |
+| `Print` | prints what's inside in two inks and paper (the gradient map `npPrint`). Wrap every set and prop in it; leave the cast, the power's marks and any deliberate full-colour hero prop outside |
+| `InkFig` | a cast member: `who` (`juno`, `bea`, `suit`) or `d` (a Design), `P` (a Pose3), `yaw`, feet at `x, y`, scale `s`, a unique `id`; `mark` swaps the hard shadow for the shrunk pink edge; `pitch` tilts the camera (negative looks up); `shadow={false}` drops the floor shadow for close-ups |
+| `inkStand(R, u, w)` | feet and scale for someone standing at a room's floor point (the room kit's `stand`, converted); `inkScale(scale2d)` converts any old-rig scale |
+| `camV(cx, cy, zoom)` | the vertical camera: centres world point (cx, cy). Use `camT` for 16:9. Wides 1.4 to 2, mediums 2 to 2.7, head close-ups by drawing the figure at s 4.6 to 5.4 over a blurred, darkened copy of the set |
+| `pose3At(t, keys)` | eased pose keys; it also sets the pose's clock and the follow-through springs (head, hair, elbows, squash), so pass its result straight to `InkFig` |
+| `face3At(t, [[f, expr]...])` | the face, swapping through a blink: `neutral`, `happy`, `shock`, `smug`, `worried`, `stern` |
+| `walkInk(phase, base)` | a walk (phase about 0.3 a frame); the rig adds the bounce, lean, head bob and hair |
+| `handAt(D, P, 'L' or 'R', yaw, x, y, s)`, `headAt(...)` | where a hand or the head is drawn, for the same arguments as the figure: pin props there (a couch, a pizza), centre close-ups on the head |
+| `INK_CAST`, `STICK` | the three Designs (`castFor(STICK, 'bea' or 'suit')` makes the others) |
+| `Caliper`, `Squeeze`, `shrinkAt`, `SpecimenTag`, `Marked`, `Cracks`, `NPTitle`, `HandNote`, `NP`, `NP_FONT` | the Night Print kit from the shrink episode: the power's caliper and readout, the squeeze with ghost trails, a shrink curve, the swinging paper tag, the pink edge, floor cracks, the title, handwriting, the palette and the faces |
+
+**The pose (`Pose3`).** Fields in degrees:
+
+| Field | What |
+|---|---|
+| `twist`, `tilt`, `lean` | the upper body turns, leans sideways, leans forward |
+| `hip` | the hips shift sideways (contrapposto) |
+| `headTurn`, `headTilt`, `headNod` | the head on its own (+ nod looks down) |
+| `armL`, `armR`, `legL`, `legR` | `{ abd, flex, bend }`: out to the side, forward (both from hanging straight down), bend at the elbow or knee |
+| `point` | `'L'` or `'R'`: that hand points a finger |
+| `look` | `[x, y]` in -1..1 (y negative looks down) |
+| `expr`, `blink` | the face (use `face3At`), 0..1 lids |
+| `squash` | + squashes (landing), - stretches (jump), about the feet |
+
+`A_POSE` stands at rest, `POINT_POSE` is the power pose, and `HEAD_POSE(expr)` is a relaxed stand for close-ups. Poses
+are built on a joint skeleton and drawn flat by `src/designs/stick.tsx` (limbs never foreshorten into stubs; see
+`ink-stick.md` 6.5), so a pose that reads in 3D can still read wrong flat: check it in a still.
+
+**Adding a character.** Each character is a `who` in `src/designs/stick.tsx`, with their hair, `EYES` setting and
+telling shape (Juno's hood and strings, Bea's dress, the suit's shirt and glasses). Their height and body come from a
+branch in `castFor` (`src/designs/juno3d.tsx`). Add them to `INK_CAST` and to the model sheet's rows in
+`src/designs/CharacterDesigns.tsx`. Render frame 11 of `Designs` and check them from every side, next to the others
+and in two or three expressions.
+
+**Inserts.** An arm reaching into a top-down insert is drawn by hand. In the house look it's one ink stroke with a
+round fist and a finger, under the cut-card filter: `ArmIn` with `flat` in `shrink60/shots.tsx`.
+
+## The original dusk look
+
+Everything below is the engine's own kit. The sets, room kit, light and UI serve both looks; the Pip rig is the
+original dusk look's cast (`rewind`, `copy-paste`).
 
 ## A shot
 
@@ -39,7 +113,7 @@ export const S4: React.FC<ShotProps> = ({ t, len }) => {
   REWIND chip and a stopwatch counting back (see `episodes/rewind/index.tsx`).
 - `fx` in `episode.json`: `flash` (one frame, then 35% the next; `color`, `o`) and `shake` (`len`, `amp`).
 
-## The cast (`rig.tsx`)
+## The dusk look's cast (`rig.tsx`)
 
 One rig, a costume per character (`LOOKS`): `pip` (A, mustard jacket), `pipHood` (B, the hero: dark hoodie, mustard
 drawstrings), `pipInk` (C, dark head), `mo` (the friend: curls, olive jacket, headphones), `sis` (the little sister:
@@ -149,6 +223,8 @@ All in the mono face on a dark translucent pill, cream text, orange for the live
 
 - **A set:** build it with the room kit in `src/engine/sets/<name>.tsx`, export it from `engine/index.ts`, document
   its coordinates in the table above, and copy it into the skill's `studio/src/engine/sets/` so it ships.
-- **A character:** a new `Look` in `LOOKS` (colours, plus an `extra` piece if it needs one, drawn in `Hero`), checked
-  on the cast sheet for contrast on the dark sets and for resemblance to anything famous.
+- **A character:** in the house look, a new `who` on the stick rig (see "Adding a character" above), checked on the
+  model sheet. In the dusk look, a new `Look` in `LOOKS` (colours, plus an `extra` piece if it needs one, drawn in
+  `Hero`), checked on the cast sheet for contrast on the dark sets. Either way, check it for resemblance to anything
+  famous.
 - **A power look:** in the episode's `index.tsx`; move it to `ui.tsx` once a second episode wants it.
